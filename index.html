@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lash Lamination by Daiana</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Merriweather', serif;
+      color: #3d3d3d;
+      margin: 0;
+      background-color: #F7D1D8;
+    }
+    header {
+  background: linear-gradient(135deg, #F6A6BB, #F7D1D8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 450px;
+  color: #3d3d3d;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+}
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+  color: #ffffff;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255,255,255,0.9);
+  margin-top: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.header-content .cta-buttons .btn {
+  font-size: 1.1rem;
+  padding: 0.9rem 2rem;
+  border-radius: 50px;
+}
+
+    section {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #B74E6E;
+      font-family: 'Playfair Display', serif;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #3d3d3d;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      background: #ffffff;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    table th {
+      background: #F6A6BB;
+      color: #3d3d3d;
+      text-align: left;
+      padding: 1rem;
+    }
+
+    table td {
+      padding: 1rem;
+      border-top: 1px solid #F4BBC9;
+    }
+
+    .reviews p {
+      background: #F4BBC9;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+      border-left: 4px solid #B74E6E;
+    }
+
+    .book-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background-color: #B74E6E;
+      color: #ffffff;
+      padding: 0.9rem 2rem;
+      border-radius: 2rem;
+      font-size: 1.1rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .book-btn:hover {
+      background-color: #F6A6BB;
+      transform: scale(1.05);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-icons a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #B74E6E;
+      transition: 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #F6A6BB;
+    }
+
+    footer {
+      text-align: center;
+      background: linear-gradient(135deg, #F6A6BB, #B74E6E);
+      padding: 2rem 1rem;
+      font-size: 1rem;
+      color: #ffffff;
+    }
+    .services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.service-card {
+  background-color: #F4BBC9; /* slightly darker blush than page background */
+  padding: 1.5rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.service-card p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.service-card span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #B74E6E; /* accent color for price */
+}
+
+.combo-card {
+  background: linear-gradient(135deg, #F6A6BB, #F7D1D8);
+  color: #3d3d3d;
+  font-weight: 600;
+  box-shadow: 0 6px 20px rgba(183,78,110,0.25);
+}
+#gallery {
+  max-width: 950px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+#gallery h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #b74e6e; /* luxury pink shade */
+  font-weight: 600;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  height: 300px; /* fixed height for uniformity */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crops and scales proportionally */
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-item span {
+  position: absolute;
+  bottom: 0.8rem;
+  left: 0.8rem;
+  background: rgba(247, 209, 216, 0.8); /* soft blush overlay */
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #3d3d3d;
+  font-size: 0.95rem;
+}
+#instagram-cta {
+  text-align: center; /* centers the button horizontally */
+  margin: 2rem 0;     /* adds some space above and below */
+}
+
+.instagram-btn {
+  background: #B74E6E; /* luxury pink */
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  display: inline-block;
+}
+
+.instagram-btn:hover {
+  background: #B74E6E;
+  transform: scale(1.05);
+}
+
+/* Optional: Responsive adjustments */
+@media screen and (max-width: 500px) {
+  .gallery-item {
+    height: 220px; /* smaller height for mobile */
+  }
+}
+  </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+          <h1>Brow & Lash Lamination<br>by Daiana</h1>
+          <p>Elegance in every lash and brow — tailored for you.</p>
+          <div class="cta-buttons">
+            <a href="https://yourbookinglink.com" target="_blank" class="btn book-btn">Book Now</a>
+          </div>
+        </div>
+      </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m Daiana, a certified lash lamination artist based in New York, dedicated to crafting lashes that are as exquisite as they are natural. My mission is to elevate your beauty effortlessly — creating lashes that enhance your eyes while maintaining their health and strength.
+
+      With years of refined experience in lash lift and tint treatments, I combine precision, artistry, and the finest nourishing products to deliver results that are both stunning and long-lasting. Every appointment is a serene, luxurious experience where your comfort and satisfaction are my highest priority.
+      
+      I believe that true elegance lies in subtlety — your lashes should captivate without overpowering, leaving a lasting impression that’s sophisticated and unforgettable.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Before & After</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/IMG_BEFORE1.jpeg" alt="Before Lash Lamination" />
+        <span>Before</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_AFTER1.jpeg" alt="After Lash Lamination" />
+        <span>After</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_BEFORE2.jpeg" alt="Before Lash Lamination" />
+        <span>Before</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_AFTER2.jpeg" alt="After Lash Lamination" />
+        <span>After</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_BEFORE3.jpeg" alt="Before Lash Lamination" />
+        <span>Before</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_AFTER3.jpeg" alt="After Lash Lamination" />
+        <span>After</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_8237.jpg" alt="Before Lash Lamination" />
+        <span>Before</span>
+      </div>
+      <div class="gallery-item">
+        <img src="images/IMG_8238.jpg" alt="After Lash Lamination" />
+        <span>After</span>
+      </div>
+    </div>
+  </section>
+  
+  <section id="services">
+    <h2>Services & Pricing</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <p>✨ Tinting + Botox, Correction with Tweezers and Wax</p>
+        <span>$45</span>
+      </div>
+      <div class="service-card">
+        <p>✨ Brow Lamination + Botox</p>
+        <span>$35</span>
+      </div>
+      <div class="service-card">
+        <p>✨ Brow Correction</p>
+        <span>$30</span>
+      </div>
+      <div class="service-card">
+        <p>✨ Lash Lift, Tinting + Botox</p>
+        <span>$60</span>
+      </div>
+      <div class="service-card">
+        <p>✨ Botox</p>
+        <span>$15</span>
+      </div>
+      <div class="service-card combo-card">
+        <p>🍰 Combo — Lash Lift + Botox, Brow Lamination + Brow Botox</p>
+        <span>$125</span>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="reviews" class="reviews">
+    <h2>Client Reviews</h2>
+    <p>“My lashes have never looked this healthy — I wake up ready every morning.” — Sofia M.</p>
+    <p>“The lift lasted over 2 months and looked so natural.” — Masha.</p>
+    <p>“Super gentle and professional — highly recommend!” — Jade R.</p>
+    <p>«Очень довольна результатом! Ресницы выглядят ухоженными, а брови идеальной формы. Процедура была комфортной и приятной.» — Анастасия.</p>
+
+  </section>
+
+  <section id="safety">
+    <h2>Safety & Hygiene</h2>
+    <p>I use only certified, high-quality lash lamination products that are gentle and nourishing. All tools and surfaces are sanitized before each client, and disposable applicators are used for every session.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Book Your Appointment</h2>
+    <p>
+      📱 Phone / WhatsApp: 213-999-1296<br />
+      💻 Booking Link: <a href="#" style="color:#B74E6E; text-decoration:none;">Book Now</a>
+    </p>
+
+    <a href="https://www.instagram.com/bby.lashhes" target="_blank" class="btn instagram-btn">Follow Me on Instagram</a>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/bby.lashhes" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>Let your lashes lift your confidence ✨</p>
+  </footer>
+</body>
+</html>
+
